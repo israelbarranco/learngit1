@@ -1,0 +1,318 @@
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   cuatro.txt
+
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git commit -m "Prueba subir archivo cuatro.txt"
+[master 3c8bd94] Prueba subir archivo cuatro.txt
+ 1 file changed, 5 insertions(+)
+ create mode 100644 cuatro.txt
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git log
+commit 3c8bd94eb8c4ab93cefac38979f8faf2c29d07d1 (HEAD -> master)
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri Jun 9 15:14:16 2017 +0000
+
+    Prueba subir archivo cuatro.txt
+
+commit 608570e2e07ba0846aebee1bd38c010d3d918f96
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri Jun 9 14:58:01 2017 +0000
+
+    PRUEBA OTRA
+
+commit a6e02de046e26973926c4a272a85ebf765c3dd00
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri Jun 9 14:06:04 2017 +0000
+
+    Modificación clase 2
+
+commit e496042e028251ec618aa1b9e692b28674a53985
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri May 26 17:04:28 2017 +0000
+
+    Se agregan 2 archivos y subdirectorio
+
+commit 29e009b6d508f641b216edd1ebb73529dede7069
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri May 26 16:50:32 2017 +0000
+
+    Commit Inicial
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ clear
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git remote add origin https://github.com/israelbarranco/learngit1.git
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git remote -v
+origin  https://github.com/israelbarranco/learngit1.git (fetch)
+origin  https://github.com/israelbarranco/learngit1.git (push)
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': israelbarranco
+Counting objects: 16, done.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (16/16), 1.35 KiB | 0 bytes/s, done.
+Total 16 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/israelbarranco/learngit1.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ ll
+total 3
+-rw-r--r-- 1 desarrolloweb 197121  49 Jun  9 15:08 cuatro.txt
+-rw-r--r-- 1 desarrolloweb 197121  11 Jun  9 14:48 dos.txt
+-rw-r--r-- 1 desarrolloweb 197121 152 Jun  9 16:00 README.md.txt
+drwxr-xr-x 1 desarrolloweb 197121   0 May 26 16:54 subdir1/
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git commit -a -m "Se agrega Archivo README"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+        README.md
+
+nothing added to commit but untracked files present
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git add README.md
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   README.md
+
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git commit -m "Subir archivo README.md"
+[master 6e7f99e] Subir archivo README.md
+ 1 file changed, 10 insertions(+)
+ create mode 100644 README.md
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git log
+commit 6e7f99ee81f0aea4eb48c8818525d76e0965a441 (HEAD -> master)
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri Jun 9 16:04:43 2017 +0000
+
+    Subir archivo README.md
+
+commit 3c8bd94eb8c4ab93cefac38979f8faf2c29d07d1 (origin/master)
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri Jun 9 15:14:16 2017 +0000
+
+    Prueba subir archivo cuatro.txt
+
+commit 608570e2e07ba0846aebee1bd38c010d3d918f96
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri Jun 9 14:58:01 2017 +0000
+
+    PRUEBA OTRA
+
+commit a6e02de046e26973926c4a272a85ebf765c3dd00
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri Jun 9 14:06:04 2017 +0000
+
+    Modificación clase 2
+
+commit e496042e028251ec618aa1b9e692b28674a53985
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri May 26 17:04:28 2017 +0000
+
+    Se agregan 2 archivos y subdirectorio
+
+commit 29e009b6d508f641b216edd1ebb73529dede7069
+Author: Israel Barranco <israel.barranco@allianz.com.mx>
+Date:   Fri May 26 16:50:32 2017 +0000
+
+    Commit Inicial
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git push
+Counting objects: 3, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 488 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/israelbarranco/learngit1.git
+   3c8bd94..6e7f99e  master -> master
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ vim README.md
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git add README.md
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git commit -m "Corrección del REAADME"
+[master 6dbb9e1] Corrección del REAADME
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git push
+Counting objects: 3, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 397 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/israelbarranco/learngit1.git
+   6e7f99e..6dbb9e1  master -> master
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ vim README.md
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git add README.md
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git commit -m "Otra corrección"
+[master 0856f2d] Otra corrección
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ git push
+Counting objects: 3, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 399 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/israelbarranco/learngit1.git
+   6dbb9e1..0856f2d  master -> master
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ rm -rf learngit
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ ll
+total 3
+-rw-r--r-- 1 desarrolloweb 197121  49 Jun  9 15:08 cuatro.txt
+-rw-r--r-- 1 desarrolloweb 197121  11 Jun  9 14:48 dos.txt
+-rw-r--r-- 1 desarrolloweb 197121 156 Jun  9 16:12 README.md
+drwxr-xr-x 1 desarrolloweb 197121   0 May 26 16:54 subdir1/
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit (master)
+$ cd ..
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso
+$ ll
+total 4
+drwxr-xr-x 1 desarrolloweb 197121 0 Jun  9 16:12 learngit/
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso
+$ rm -rf learngit/
+rm: cannot remove 'learngit/': Device or resource busy
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso
+$ ll
+total 4
+drwxr-xr-x 1 desarrolloweb 197121 0 Jun  9 16:14 learngit/
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso
+$ rm -rf learngit/
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso
+$ ll
+total 0
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso
+$ git clone https://github.com/israelbarranco/learngit1.git
+Cloning into 'learngit1'...
+remote: Counting objects: 25, done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 25 (delta 5), reused 24 (delta 4), pack-reused 0
+Unpacking objects: 100% (25/25), done.
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso
+$ ll
+total 4
+drwxr-xr-x 1 desarrolloweb 197121 0 Jun  9 16:16 learngit1/
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso
+$ ll
+total 4
+drwxr-xr-x 1 desarrolloweb 197121 0 Jun  9 16:16 learngit1/
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso
+$ cd learngit1/
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit1 (master)
+$ ll
+total 3
+-rw-r--r-- 1 desarrolloweb 197121  54 Jun  9 16:16 cuatro.txt
+-rw-r--r-- 1 desarrolloweb 197121  11 Jun  9 16:16 dos.txt
+-rw-r--r-- 1 desarrolloweb 197121 156 Jun  9 16:16 README.md
+drwxr-xr-x 1 desarrolloweb 197121   0 Jun  9 16:16 subdir1/
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit1 (master)
+$ git fetch
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit1 (master)
+$ git log --oneline
+0856f2d (HEAD -> master, origin/master, origin/HEAD) Otra corrección
+6dbb9e1 Corrección del REAADME
+6e7f99e Subir archivo README.md
+3c8bd94 Prueba subir archivo cuatro.txt
+608570e PRUEBA OTRA
+a6e02de Modificación clase 2
+e496042 Se agregan 2 archivos y subdirectorio
+29e009b Commit Inicial
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit1 (master)
+$ git pull
+Already up-to-date.
+
+desarrolloweb@AZMEXCURSOS01 MINGW64 /c/curso/learngit1 (master)
+$
+
