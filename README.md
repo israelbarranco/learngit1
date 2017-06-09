@@ -6,5 +6,5 @@ Hola, MUNDO!!!
 //Hacer un for XD
 //osh
 
-##ubsección
+## Subseccion
 Prueba de la subsección ¿eh?
