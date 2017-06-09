@@ -1,1 +1,1 @@
-Hello, world!
+Clase 2 Hello, world!
